@@ -28,7 +28,7 @@ control 'Bareos packages' do
   %w(bareos-director bareos-database-postgresql).each do |pkg|
     describe package(pkg) do
       it { should be_installed }
-      its('version') { should match '18.2.5-139.1' }
+      its('version') { should match '18.2.5-144.1' }
     end
   end
 end
